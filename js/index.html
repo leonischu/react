@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //"use strict";//strict mode  ...ramro sanga variable haru defone garnu parrcha 
+        // const a=34; constant 
+        // var a=34; var use garda error aaudaina 
+        //         let a='this is string';
+        // console.log(a);
+
+
+        // Data types in js
+        // Numbers 
+        // Objects
+        // booleans true or false 
+        // String
+        // undifined 
+        // null
+
+        function hello(){
+            console.log("hey");
+
+        }
+
+        let y={
+            r:34,
+            m:64,
+            // function inside functions
+            func:function myfunc(number){
+                console.log("the number is " + number);
+
+            }
+
+        }
+        //  events in javascript
+        document.addEventListener("click",function click(){
+            // alert("hello"); alert box aaucha
+            // are you sure  box popup ko lagi 
+            let conf = confirm("are you sure ?");
+            console.log(conf);
+
+        })
+        // create array
+        // let arr[34, 2 , 23]
+        setTimeout(() => {
+            console.log("heej")
+        }, 3000);
+        console.log("tala ko script");//pahila yo chalcha ani 3 sec pachi mathi ko chalna thacha
+        
+
+
+
+
+
+    </script>
+</head>
+<body>
+    Js recall
+</body>
+</html>
