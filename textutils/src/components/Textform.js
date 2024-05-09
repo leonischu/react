@@ -3,6 +3,11 @@ import React, {useState}from 'react'
 
 export default function Textform(props) {
     const [text, setText] = useState("");
+    const handleClearClick=()=>{
+      let newText=''
+      setText(newText)
+
+    }
 
     const handleUpClick =()=>{//arrow function banako
      //   console.log("Uppercase was clicked"+text);
@@ -28,7 +33,9 @@ export default function Textform(props) {
   <textarea className="form-control" id="myBox" value={text} onChange={haldleOnChange} rows="3"></textarea>
 </div>
 <button className="btn btn-primary mx-2" onClick={handleUpClick}>Covert to uppercase</button>
-<button className="btn btn-primary " onClick={handleLoClick}>Covert to Lowercase</button>
+<button className="btn btn-primary mx-2 " onClick={handleLoClick}>Covert to Lowercase</button>
+<button className="btn btn-primary " onClick={handleClearClick}>Clear Text</button>
+
     </div>
     {/* my -2 ...3 ..4 vaneko margin  */}
     <div className="container my-3"> 
