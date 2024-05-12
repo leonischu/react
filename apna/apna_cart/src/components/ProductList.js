@@ -1,12 +1,12 @@
 import React from 'react'
+import Product from './Product'
 
 export default function ProductList(props) {
-    console.log(props)
   return (
     
-    <div>
+   props.productList.map((product)=>{
+return  <Product product={product}/>
 
-      
-    </div>
+   })
   )
 }
