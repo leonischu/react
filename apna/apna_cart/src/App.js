@@ -20,10 +20,16 @@ function App() {
   
       }
   ]
+  let [ProductList, setProductList ]= useState(products)
+  incrementQuantity= (index) =>{
+    let newProductList = [...productList]
+    newProductList[index].quantity++
+    setProductList(newProductList);
+  }
   return (
     <><Navbar/>
-    <main className='container' mt-5>
-    <ProductList productList={productList}/>
+    <main className='container mt-5'>
+    <ProductList productList={productList} incrementQuantity={this.incrementQuantity}/>
     </main>
     {/* <Footer/> */}
       </>

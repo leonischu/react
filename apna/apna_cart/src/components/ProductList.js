@@ -1,12 +1,5 @@
 import React from 'react'
-import Product from './Product'
-
-export default function ProductList(props) {
-  return (
-    
-   props.productList.map((product)=>{
-return  <Product product={product}/>
-
-   })
-  )
-}
+import product from './Product.js'
+ export default  function ProductList(props){
+    props.productList.map((product,i)=>)
+}/
